@@ -53,7 +53,7 @@ body a:hover{
 	height: 32px;
 	border: none;
 	text-indent: 100%;
-	background: url("../images/arr.png") no-repeat 0px 0px;
+	background: url("arr.png") no-repeat 0px 0px;
 }
 #toTopHover {
 	width: 32px;
@@ -135,7 +135,7 @@ ul.list-left li {
     text-decoration: none;
 }
 .header{
-    background: url(../images/pic2.jpg) no-repeat center;
+    background: url(pic2.jpg) no-repeat center;
     background-size: cover;
     -webkit-background-size: cover;
     -o-background-size: cover;
@@ -167,7 +167,7 @@ p.abt-para {
 	background:#f7f7f7;
 }
 .abt-right{
-    background: url(../images/pic3.jpg) no-repeat center;
+    background: url(pic3.jpg) no-repeat center;
     background-size: cover;
     -webkit-background-size: cover;
     -o-background-size: cover;
@@ -389,7 +389,7 @@ a.accordion-section-title span {
 /*-- //employment --*/
 /*-- numscroller --*/
 .num-scroller{
-    background: url(../images/pic7.jpg) no-repeat center;
+    background: url(pic7.jpg) no-repeat center;
     background-size: cover;
     -webkit-background-size: cover;
     -o-background-size: cover;
@@ -551,7 +551,7 @@ h2.resp-accordion {
     margin: auto;
 }
 .fb_icon1 {
-    background: url(../images/search.png) no-repeat 2px 1px #000;
+    background: url(search.png) no-repeat 2px 1px #000;
     width: 50px;
     height: 50px;
     border-radius: 100%;
@@ -1733,7 +1733,7 @@ h3.tittle:after, h3.tittle:before {
 		margin: 0 3px;
 	}
 	.fb_icon1 {
-		background: url(../images/search.png) no-repeat -2px -2px #000;
+		background: url(search.png) no-repeat -2px -2px #000;
 		width: 43px;
 		height: 43px;
 	}
