@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>I am Yuanna</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="" />
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <script src="js/jquery-2.1.4.min.js"></script>
+</head>
+
+<body>
+    <!-- banner -->
+    <div class="header-top">
+        <div class="container">
+            <ul>
+                <li><a class="scroll" href="#about"><span class="glyphicon glyphicon-file" aria-hidden="true"></span>我的简历</a></li>
+                <li><a class="scroll" href="#emailme"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>联系我</a></li>
+                <li><a href="javascript:window.print()"><span class="glyphicon glyphicon-print" aria-hidden="true"></span>打印简历</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="header">
+        <div class="container">
+            <div class="col-md-8 header-left">
+                <div class="col-sm-5 pro-pic">
+                    <img class="img-responsive" src="images/pic1.png" alt=" " />
+                </div>
+                <div class="col-sm-5 pro-text">
+                    <h1>Yuanna</h1>
+                    <p>爱吃鬼</p>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="col-md-4 header-right ">
+                <ul class="list-left">
+                    <li>邮箱:</li>
+                    <li>我的主页:</li>
+                    <li>我的手机:</li>
+                    <li>地址: </li>
+                </ul>
+                <ul class="list-right">
+                    <li><a href="mailto:info@example.com">yuanna@gmail.com</a></li>
+                    <li><a href="mailto:info@example.com">github.com</a></li>
+                    <li><a href="tel:18312839639">18312839639</a></li>
+                    <li>广州市番禹区</li>
+                </ul>
+                <div class="clearfix"></div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+    <!-- //banner -->
+    <!-- about -->
+    <div id="about" class="about">
+        <div class="container">
+            <h3 class="tittle">关于我</h3>
+            <p class="abt-para">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur . </p>
+        </div>
+        <div class="col-md-6 abt-left ">
+            <h2>毕业学校</h2>
+            <div class="accordion">
+                <div class="accordion-section">
+                    <h5>
+                    	<a class="accordion-section-title" href="#accordion-1">
+							<span>2011 - 2014</span>广州市科技大学
+							<i class="glyphicon glyphicon-chevron-down"></i><div class="clearfix"></div>
+						</a>
+					</h5>
+                    <div id="accordion-1" class="accordion-section-content">
+                        <h6>Honors & Awards</h6>
+                        <ul>
+                            <li><span class="glyphicon glyphicon-ok" aria-hidden="true"></span><a href="#">voluptatem accusantium</a></li>
+                            <li><span class="glyphicon glyphicon-ok" aria-hidden="true"></span><a href="#">accusantium doloremque</a></li>
+                            <li><span class="glyphicon glyphicon-ok" aria-hidden="true"></span><a href="#">doloremque laudantium</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <script>
+            jQuery(document).ready(function() {
+                function close_accordion_section() {
+                    jQuery('.accordion .accordion-section-title').removeClass('active');
+                    jQuery('.accordion .accordion-section-content').slideUp(300).removeClass('open');
+                }
+
+                jQuery('.accordion-section-title').click(function(e) {
+                    // Grab current anchor value
+                    var currentAttrValue = jQuery(this).attr('href');
+
+                    if (jQuery(e.target).is('.active')) {
+                        close_accordion_section();
+                    } else {
+                        close_accordion_section();
+
+                        // Add active class to section title
+                        jQuery(this).addClass('active');
+                        // Open up the hidden content panel
+                        jQuery('.accordion ' + currentAttrValue).slideDown(300).addClass('open');
+                    }
+
+                    e.preventDefault();
+                });
+            });
+            </script>
+        </div>
+        <div class="col-md-6 abt-right ">
+            <div class="col-sm-4 abt-gd-left text-center">
+                <div id="demo-pie-1" class="pie-title-center" data-percent="25"> <span class="pie-value"></span> </div>
+                <h4>HTML</h4>
+            </div>
+            <div class="col-sm-4 abt-gd-left text-center">
+                <div id="demo-pie-3" class="pie-title-center" data-percent="75"> <span class="pie-value"></span> </div>
+                <h4>Java Script</h4>
+            </div>
+            <div class="col-sm-4 abt-gd-left text-center">
+                <div id="demo-pie-4" class="pie-title-center" data-percent="15"> <span class="pie-value"></span> </div>
+                <h4>UI/UX Designer</h4>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <!-- about -->
+    <!-- education -->
+    <div class="employment">
+        <div class="container">
+            <h3 class="tittle ">Work Experience</h3>
+            <p class="abt-para ">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur . </p>
+            <div class="col-md-6 employ-left">
+                <h4>01</h4>
+            </div>
+            <div class="col-md-6 employ-right">
+                <h5><span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span>Web Designer</h5>
+                <p>voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis </p>
+            </div>
+            <div class="col-md-6 employ-left2">
+                <h5>UI/UX Designer<span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span></h5>
+                <p>voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis </p>
+            </div>
+            <div class="col-md-6 employ-right2">
+                <h4>02</h4>
+            </div>
+            <div class="col-md-6 employ-left ">
+                <h4>03</h4>
+            </div>
+            <div class="col-md-6 employ-right">
+                <h5><span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span>HTML Developer</h5>
+                <p>voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis </p>
+            </div>
+            <div class="col-md-6 employ-left2">
+                <h5>Photoshop<span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span></h5>
+                <p>voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis </p>
+            </div>
+            <div class="col-md-6 employ-right2">
+                <h4>04</h4>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+    <!-- education -->
+    <!-- contact -->
+    <div id="emailme" class="contact">
+        <div class="container">
+            <h3 class="tittle">Contact</h3>
+            <div class="col-md-6 contact-left ">
+                <div class="horizontal-tab">
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a href="#tab1" data-toggle="tab" aria-expanded="false">Contact me</a></li>
+                        <li class=""><a href="#tab2" data-toggle="tab" aria-expanded="false">Hire me</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane active in" id="tab1">
+                            <div class="contact-form">
+                                <ul>
+                                    <li><i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i>1234k Avenue, 4th block, <span>Newyork City.</span></li>
+                                    <li><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i><a href="mailto:info@example.com">info@example.com</a></li>
+                                    <li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i>+1234 567 567</li>
+                                </ul>
+                                <form>
+                                    <input type="text" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" required="">
+                                    <input type="email" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" required="">
+                                    <textarea type="text" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message...';}" required="">Message...</textarea>
+                                    <input type="submit" value="Submit">
+                                </form>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="tab2">
+                            <div class="contact-form">
+                                <form>
+                                    <input type="text" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" required="">
+                                    <input type="email" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" required="">
+                                    <textarea type="text" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message...';}" required="">Description...</textarea>
+                                    <input id="uploadFile" placeholder="Choose File" disabled="disabled" />
+                                    <div class="fileUpload btn btn-primary">
+                                        <span>Upload</span>
+                                        <input id="uploadBtn" type="file" class="upload" />
+                                    </div>
+                                    <input type="submit" value="Send Request">
+                                </form>
+                                <script>
+                                document.getElementById("uploadBtn").onchange = function() {
+                                    document.getElementById("uploadFile").value = this.value;
+                                };
+                                </script>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 contact-right ">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d2482.432383990807!2d0.028213999961443994!3d51.52362882484525!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1423469959819" frameborder="0" style="border:0"></iframe>
+            </div>
+            <div class="clearfix"></div>
+            <p class="copy-right">&copy 2016 Resume. All rights reserved | Design by <a href="http://w3layouts.com/">W3layouts</a></p>
+        </div>
+    </div>
+    <!-- //contact -->
+    <!-- for bootstrap working -->
+    <script src="js/bootstrap.js"></script>
+    <!-- //for bootstrap working -->
+    <script src="js/jquery.nicescroll.js"></script>
+    <script src="js/scripts.js"></script>
+    <script>
+	    $(document).ready(function() {
+	        /*
+	        	var defaults = {
+	        	containerID: 'toTop', // fading element id
+	        	containerHoverID: 'toTopHover', // fading element hover id
+	        	scrollSpeed: 1200,
+	        	easingType: 'linear' 
+	        	};
+	        */
+	        $().UItoTop({
+	            easingType: 'easeOutQuart'
+	        });
+	    });
+    </script>
+    <a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+	<script src="js/move-top.js"></script>
+    <script src="js/easing.js"></script>
+    <script>
+	    jQuery(document).ready(function($) {
+	        $(".scroll").click(function(event) {
+	            event.preventDefault();
+	            $('html,body').animate({
+	                scrollTop: $(this.hash).offset().top
+	            }, 1000);
+	        });
+	    });
+    </script>
+    <script src="js/pie-chart.js"></script>
+    <script>
+	    $(document).ready(function() {
+	        $('#demo-pie-1').pieChart({
+	            barColor: '#10A7AF',
+	            trackColor: '#fff',
+	            lineCap: 'round',
+	            lineWidth: 8,
+	            onStep: function(from, to, percent) {
+	                $(this.element).find('.pie-value').text(Math.round(percent) + '%');
+	            }
+	        });
+
+	        $('#demo-pie-2').pieChart({
+	            barColor: '#10A7AF',
+	            trackColor: '#fff',
+	            lineCap: 'butt',
+	            lineWidth: 8,
+	            onStep: function(from, to, percent) {
+	                $(this.element).find('.pie-value').text(Math.round(percent) + '%');
+	            }
+	        });
+
+	        $('#demo-pie-3').pieChart({
+	            barColor: '#10A7AF',
+	            trackColor: '#fff',
+	            lineCap: 'square',
+	            lineWidth: 8,
+	            onStep: function(from, to, percent) {
+	                $(this.element).find('.pie-value').text(Math.round(percent) + '%');
+	            }
+	        });
+
+	        $('#demo-pie-4').pieChart({
+	            barColor: '#10A7AF',
+	            trackColor: '#fff',
+	            lineCap: 'square',
+	            lineWidth: 8,
+	            onStep: function(from, to, percent) {
+	                $(this.element).find('.pie-value').text(Math.round(percent) + '%');
+	            }
+	        });
+	    });
+    </script>
+    <script src="js/numscroller-1.0.js"></script>
+</body>
+
+</html>
